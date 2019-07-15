@@ -4,10 +4,6 @@ body {
   background: #8f57fd;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .header {
   align-items: center;
   background: #8f57fd;
@@ -81,10 +77,8 @@ body {
 }
 
 .categories__title {
-  background: #8f57fd;
   color: white;
   font-size: 16px;
-  margin-top: -16px;
   position: absolute;
   padding-left: 30px;
   width: 100%;
