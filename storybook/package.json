@@ -1,0 +1,17 @@
+{
+  "name": "tefa",
+  "version": "1.0.0",
+  "description": "esta es una versión de prueba",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@storybook/html": "^5.1.9",
+    "babel-loader": "^8.0.6"
+  }
+}

@@ -1,0 +1,11 @@
+import { CreateStyled } from '@emotion/styled';
+import { Theme } from './types';
+export declare const styled: CreateStyled<Theme>;
+export * from './base';
+export * from './types';
+export * from '@emotion/core';
+export * from 'emotion-theming';
+export { createGlobal, createReset } from './global';
+export * from './create';
+export * from './convert';
+export * from './ensure';

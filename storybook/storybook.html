@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<style>
+  .carousel {
+    width: 100%;
+    padding-left: 30px;
+    position: relative;
+    overflow: scroll;
+  }
+  .carousel__container {
+    transition: 450ms transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin: 70px 0px;
+    padding-bottom: 10px;
+  }
+  .carousel-item {
+    background-color: palevioletred;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 250px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 450ms all;
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+  }
+  .carousel-item:hover ~ .carousel-item {
+    -webkit-transform: translate3d(100px, 0, 0);
+            transform: translate3d(100px, 0, 0);
+  }
+  .carousel__container:hover .carousel-item {
+    opacity: 0.3;
+  }
+  .carousel__container:hover .carousel-item:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 1;
+  }
+  .carousel-item__img {
+    width: 200px;
+    height: 250px;
+    -o-object-fit: cover;
+      object-fit: cover;
+  }
+  .carousel-item__details {
+    /* align-items: flex-start; */
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    bottom: 0;
+    /* display: flex; */
+    font-size: 10px;
+    /* flex-direction: column; */
+    /* justify-content: flex-end; */
+    left: 0;
+    opacity: 0;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .carousel-item__details--img {
+    width: 20px;
+  }
+
+  .carousel-item:hover .carousel-item__details {
+    opacity: 1;
+  }
+  .carousel-item__details--title {
+    color: white;
+    margin: 5px 0px 0px 0px;
+  }
+
+  .carousel-item__details--subtitle {
+    color: white;
+    font-size: 8px;
+    margin: 3px 0px;
+  }
+</style>
+<body>
+  <section class="carousel">
+    <div class="carousel__container">
+      <div class="carousel-item">
+        <img class="carousel-item__img" src="https://images.pexels.com/photos/789822/pexels-photo-789822.jpeg?auto=format%2Ccompress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""  />
+        <div class="carousel-item__details">
+          <div>
+            <img class="carousel-item__details--img" src="../assets/play-icon.png" alt="Play Icon"> 
+            <img class="carousel-item__details--img" src="../assets/plus-icon.png" alt="Plus Icon"> 
+          </div>
+          <p class="carousel-item__details--title">Título descriptivo</p>
+          <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+
+      </div>
+      <div class="carousel-item">
+
+      </div>
+    </div>
+  </section>
+</body>
+</html>
